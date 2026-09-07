@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+       // 3.3 Calcule e exiba a média aritmética dos números inteiros de 15 a 100 (inclusive).
+    var lista = []
+    for (var i = 15; i <= 100; i++){
+        lista.push(i);
+    }
+    var soma = 0;
+    for(var i = 0; i < lista.length; i++) {
+        soma += lista[i];
+    }
+    var media = soma / lista.length;
+    alert("O valor da média dos números é de:" + media)
+
+</script>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+       // 3.2 Leia dois valores. Enquanto o segundo valor for menor ou igual a zero, peça novamente esse mesmo valor. Ao final, mostre a divisão do primeiro pelo segundo.
+    var num1 = Numberprompt("Insira um primeiro valor:")
+    var num2 = Numberprompt("Insira um segundo valor")
+    while(num2 <= 0){
+        var num2 = Numberprompt("Insira um segundo valor")
+    }
+    var div = (num1 / num2);
+    alert("A divisão do primeiro número pelo segundo número é " + div);
+
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+       // 2.7  Leia 6 números. Some apenas os valores menores que 72. Exiba a soma e todos os valores informado.
+    var numero1 = Number(prompt("Insira o valor do primeiro número"))
+    var numero2 = Number(prompt("Insira o valor do segundo número"))
+    var numero3 = Number(prompt("Insira o valor do terceiro número"))
+    var numero4 = Number(prompt("Insira o valor do quarto número"))
+    var numero5 = Number(prompt("Insira o valor do quinto número"))
+    var numero6 = Number(prompt("Insira o valor do sexto número"))
+
+    var entrada = [numero1, numero2, numero3, numero4, numero5, numero6];
+    var soma = 0;
+    entrada.forEach(i =>{
+        if(i <= 72){
+            soma += i;
+        }
+    })
+    alert("A soma dos números menores que 72 é de " + soma);
+    alert("Os números computados foram: " + entrada.join(", "));
+
+</script>
+</html>

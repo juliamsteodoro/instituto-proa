@@ -13,35 +13,30 @@
 
     // 1.2
     var nome;
-    nome = prompt("Insira o seu nome:")
+    nome = Numberprompt("Insira o seu nome:")
+    alert("Olá, " + nome)
 
     //1.3
-    var idade;
-    idade = prompt("Insira sua idade:")
+    var nome = Numberprompt("Insira o seu nome:")
+    var idade = Numberprompt("Insira sua idade:")
     alert("Olá, " + nome + ", sua idade é " + idade)
-
-    // desafios extras
-    alert(nome.toUpperCase())
-
-    // * parse
-    // * personalizar saudação
 
     //atividade 2
 
     //2.1
-    var numero1 = prompt("Insira um número")
-    var numero2 = prompt("Insira outro número")
+        var numero1 = Number(prompt("Insira um número"))
+        var numero2 = Number(prompt("Insira outro número"))
 
-    if(numero1 > numero2){
-        alert("O maior número é " + numero1)
-    }else if(numero1 < numero2){
-        alert("O maior número é " + numero2)
-    }else{
-        alert("Os números são iguais")
-    }
+        if(numero1 > numero2){
+            alert("O maior número é " + numero1)
+        }else if(numero1 < numero2){
+            alert("O maior número é " + numero2)
+        }else{
+            alert("Os números são iguais")
+        }
 
     //2.2
-    var numero = prompt("Insira um valor(positivo, negativo ou zero.)")
+    var numero = NumberNumber(prompt("Insira um valor(positivo, negativo ou zero.)"))
 
     if(numero > 0){
         alert("O número inserido é positivo")
@@ -52,21 +47,259 @@
     }
 
     //2.3
-    var numero1 = prompt("Insira o valor do primeiro número")
-    var numero2 = prompt("Insira o valor do segundo número")
-    var numero3 = prompt("Insira o valor do terceiro número")
+    var numero1 = Number(prompt("Insira o valor do primeiro número"))
+    var numero2 = Number(prompt("Insira o valor do segundo número"))
+    var numero3 = Number(prompt("Insira o valor do terceiro número"))
 
-    if((numero1 =! numero2) && (numero1 =! numero3)
-        (numero2 =! numero3))
-    if(numero1 > numero2 && numero1 > numero3){
-        alert("O maior número é " + numero1)
-    }else if(numero1 < numero2 && numero2 > numero3){
-        alert("O maior número é " + numero2)
-    }else{
-        alert("O maior número é " + numero3)
+    if((numero1 != numero2) && (numero1 != numero3) && (numero2 != numero3)){
+        if(numero1 > numero2 && numero1 > numero3){
+            alert("O maior número é " + numero1)
+        }else if(numero2 > numero1 && numero2 > numero3){
+            alert("O maior número é " + numero2)
+        }else{
+            alert("O maior número é " + numero3)
+        }
+            }else{
+                alert("Números inválidos, tente novamente.")
+            }
+    
+    //2.4
+    var numero1 = Number(prompt("Insira o valor do primeiro número"))
+    var numero2 = Number(prompt("Insira o valor do segundo número"))
+    var numero3 = Number(prompt("Insira o valor do terceiro número"))
+    var menor = Math.min(numero1, numero2, numero3);
+    var soma = (numero1 + numero2 + numero3) - menor;
+
+    alert("A soma dos dois maiores números é " + soma);
+
+    //2.5
+    var num1 = Number(prompt("Insira o valor do primeiro número"))
+    var num2 = Number(prompt("Insira o valor do segundo número"))
+    var num3 = Number(prompt("Insira o valor do terceiro número"))
+    var num4 = Number(prompt("Insira o valor do quarto número"))
+    var num5 = Number(prompt("Insira o valor do quinto número"))
+    var num6 = Number(prompt("Insira o valor do sexto número"))
+    
+    var lista = [num1, num2, num3, num4, num5, num6];
+
+    var soma = 0;
+    for(var i = 0; i < lista.length; i++){
+        soma += lista[i];
     }
-                                                                                                                                                                                                                                                      
+    alert("Os valores fornecidos foram: " + lista.join(", ") + ". As somas desses valores é " + soma)
 
+    //2.6
+    var num1 = Number(prompt("Insira o valor do primeiro número"))
+    var num2 = Number(prompt("Insira o valor do segundo número"))
+    var num3 = Number(prompt("Insira o valor do terceiro número"))
+    var num4 = Number(prompt("Insira o valor do quarto número"))
+
+    var maior = Math.max(num1, num2, num3, num4)
+
+    alert("O primeiro número é " + num1 + " . O último número é " + num4 + ". O maior número é " + maior)
+
+    //2.7
+    var numero1 = Number(prompt("Insira o valor do primeiro número"))
+    var numero2 = Number(prompt("Insira o valor do segundo número"))
+    var numero3 = Number(prompt("Insira o valor do terceiro número"))
+    var numero4 = Number(prompt("Insira o valor do quarto número"))
+    var numero5 = Number(prompt("Insira o valor do quinto número"))
+    var numero6 = Number(prompt("Insira o valor do sexto número"))
+
+    var entrada = [numero1, numero2, numero3, numero4, numero5, numero6];
+    var soma = 0;
+    entrada.forEach(i =>{
+        if(i <= 72){
+            soma += i;
+        }
+    })
+    alert("A soma dos números menores que 72 é de " + soma);
+    alert("Os números computados foram: " + entrada.join(", "));
+
+    //2.8
+    var num1 = Number(prompt("Insira o valor do primeiro número"));
+        if(num1 > 10 || num1 < 0){
+            var num1 = Number(prompt("Insira um novo valor que seja maior que 0 e menor que 10:"))
+        }
+    var num2 = Number(prompt("Insira o valor do segundo número"));
+        if(num2 > 10 || num2 < 0){
+            var num2 = Number(prompt("Insira um novo valor que seja maior que 0 e menor que 10:"))
+        }
+    var num3 = Number(prompt("Insira o valor do terceiro número"));
+        if(num3 > 10 || num3 < 0){
+            var num3 = Number(prompt("Insira um novo valor que seja maior que 0 e menor que 10:"))
+        }
+    var num4 = Number(prompt("Insira o valor do quarto número"));
+        if(num4 > 10 || num4 < 0){
+            var num4 = Number(prompt("Insira um novo valor que seja maior que 0 e menor que 10:"))
+        }
+    var media= ((num1 + num2 + num3 + num4) / 4);
+    if(media > 5 ){
+        alert("Você passou no teste!")
+    }else{
+        alert("Tente novamente!")
+    }
+    
+    //2.9
+    var idade = Numberprompt("Insira o seu ano de nascimento: ")
+    var able_to_vote = (2026 - idade);
+    if(able_to_vote >= 18){
+        alert("Você está apto para votar na eleição desse ano!")
+    }else{
+        alert("Você não está elegível para votar neste ano.")
+    }
+
+    //3.1
+    var cont = 30;
+    while(cont >= 0){
+        alert(cont);
+        cont--;
+    }
+    alert("EXPLOSÃO!")
+
+    // 3.2
+    var num1 = Numberprompt("Insira um primeiro valor:")
+    var num2 = Numberprompt("Insira um segundo valor")
+    while(num2 <= 0){
+        var num2 = Numberprompt("Insira um segundo valor")
+    }
+    var div = (num1 / num2);
+    alert("A divisão do primeiro número pelo segundo número é " + div);
+
+    //3.3
+    var lista = []
+    for (var i = 15; i <= 100; i++){
+        lista.push(i);
+    }
+    var soma = 0;
+    for(var i = 0; i < lista.length; i++) {
+        soma += lista[i];
+    }
+    var media = soma / lista.length;
+    alert("O valor da média dos números é de:" + media)
+
+    // 3.4
+    var num1 = Number(prompt("Insira um número: "))
+    var num2 = Number(prompt("Insira um segundo número que seja maior que o primeiro: "))
+    while(num2 > num1){
+        num2 = Number(prompt("Insira um segundo número que seja maior que o primeiro: "))
+    }
+    var lista = [];
+    for (var i = num1; i <= num2; i++){
+        lista.push(i);
+    }
+    for(var i = 0; i < lista.length; i++) {
+        soma += lista[i];
+    }
+    var media = soma / lista.lenght;
+    alert("A média entre esses números e todos os inteiros entre eles é de: " + media)
+
+    //3.5
+    var aprovados = 0;
+    var continuar = "S";
+    while(continuar == "S" || continuar == "s"){
+        var nota1 = Number(prompt("Insira a primeira nota:"));
+        var nota2 = Number(prompt("Insira a segunda nota:"));
+        var media = ((nota1 + nota2) / 2);
+        if (media >= 9.5){
+            alert("Parabéns! Aluno aprovado.");
+            aprovados++;
+        }else{
+            alert("Aluno reprovado.");
+        }
+        continuar = prompt("Deseja calcular a média de outro aluno? (S/N)")
+    }
+            alert("O total de aprovados é: " + aprovados)
+            
+    //3.6
+    var nota1 = Number(prompt("Insira a primeira nota: "));
+    while(nota1 > 10 && nota1 < 0){
+        nota1 = Number(prompt("Insira a primeira nota: "));
+    }
+    var nota2 = Number(prompt("Insira a segunda nota: "));
+    while(nota2 > 10 && nota2 < 0){
+        nota2 = Number(prompt("Insira a segunda nota: "));
+    }
+    var nota3 = Number(prompt("Insira a terceira nota: "));
+    while(nota3 > 10 && nota3 < 0){
+        nota3 = Number(prompt("Insira a terceira nota: "));
+    }
+    var nota4 = Number(prompt("Insira a quarta nota: "));
+    while(nota4 > 10 && nota4 < 0){
+        nota4 = Number(prompt("Insira a quarta nota: "));
+    }
+    var nota5 = Number(prompt("Insira a quinta nota: "));
+    while(nota5 > 10 && nota5 < 0){
+        nota5 = Number(prompt("Insira a quinta nota: "));
+    }
+    var nota6 = Number(prompt("Insira a sexta nota: "));
+    while(nota6 > 10 && nota6 < 0){
+        nota6 = Number(prompt("Insira a sexta nota: "));
+    }
+
+    var media = ((nota1 + nota2 + nota3 + nota4 + nota5 + nota6) / 4);
+    alert("A média das notas é: " + media);
+
+    //3.7
+    var valor = Number(prompt("Insira um valor maior que 0: "))
+    var count = 1;
+    if(valor >= 0){
+    while(count <= valor){
+        alert(count);
+        count++;
+    }
+    }else{
+        alert("Valor inválido.")
+    }
+
+    //3.8
+    for(var i = 101; i <= 110; i++){
+        alert(i);
+    }
+    //3.9
+    var intervalo = 0;
+    var valor1 = Number(prompt("Insira um valor: "));
+    if(valor1 >= 24 && valor1 <= 42){
+        intervalo++;
+    }
+    var valor2 = Number(prompt("Insira um segundo valor: "));
+    if(valor2 >= 24 && valor2 <= 42){
+        intervalo++;
+    }
+    var valor3 = Number(prompt("Insira um terceiro valor: "));
+    if(valor3 >= 24 && valor3 <= 42){
+        intervalo++;
+    }
+    var valor4 = Number(prompt("Insira um quarto valor: "));
+    if(valor4 >= 24 && valor4 <= 42){
+        intervalo++;
+    }
+    var valor5 = Number(prompt("Insira um quinto valor: "));
+    if(valor5 >= 24 && valor5 <= 42){
+        intervalo++;
+    }
+    var valor6 = Number(prompt("Insira um sexto valor: "));
+    if(valor6 >= 24 && valor6 <= 42){
+        intervalo++;
+    }
+    var valor7 = Number(prompt("Insira um sétimo valor: "));
+    if(valor7 >= 24 && valor7 <= 42){
+        intervalo++;
+    }
+    var valor8 = Number(prompt("Insira um oitavo valor: "));
+    if(valor8 >= 24 && valor8 <= 42){
+        intervalo++;
+    }
+    var valor9 = Number(prompt("Insira um nono valor: "));
+    if(valor9 >= 24 && valor9 <= 42){
+        intervalo++;
+    }
+    var valor10 = Number(prompt("Insira um décimo valor: "));
+    if(valor10 >= 24 && valor10 <= 42){
+        intervalo++;
+    }
+    var n_intervalo = (10 - intervalo);
+    alert("O número de valores que estão entre 24 e 42 é " + intervalo + ". O número de valores que não estão dentro desse intervalo é: " + n_intervalo)
 
 </script>
 </html>

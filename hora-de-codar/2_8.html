@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+       // 2.8 Leia 4 números, aceitando apenas valores maiores que 0 e menores que 10. Calcule a média e:
+            //- se média > 5, exiba "Você passou no teste"
+           //caso contrário, exiba "Tente novamente".
+
+    var num1 = Number(prompt("Insira o valor do primeiro número"));
+        if(num1 > 10 || num1 < 0){
+            var num1 = Number(prompt("Insira um novo valor que seja maior que 0 e menor que 10:"))
+        }
+    var num2 = Number(prompt("Insira o valor do segundo número"));
+        if(num2 > 10 || num2 < 0){
+            var num2 = Number(prompt("Insira um novo valor que seja maior que 0 e menor que 10:"))
+        }
+    var num3 = Number(prompt("Insira o valor do terceiro número"));
+        if(num3 > 10 || num3 < 0){
+            var num3 = Number(prompt("Insira um novo valor que seja maior que 0 e menor que 10:"))
+        }
+    var num4 = Number(prompt("Insira o valor do quarto número"));
+        if(num4 > 10 || num4 < 0){
+            var num4 = Number(prompt("Insira um novo valor que seja maior que 0 e menor que 10:"))
+        }
+    var media= ((num1 + num2 + num3 + num4) / 4);
+    if(media > 5 ){
+        alert("Você passou no teste!")
+    }else{
+        alert("Tente novamente!")
+    }
+    
+</script>
+</html>
