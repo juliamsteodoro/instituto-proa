@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+       // 2.3 Leia 3 valores diferentes e mostre o maior.
+    var numero1 = Number(prompt("Insira o valor do primeiro número"))
+    var numero2 = Number(prompt("Insira o valor do segundo número"))
+    var numero3 = Number(prompt("Insira o valor do terceiro número"))
+
+    if((numero1 != numero2) && (numero1 != numero3) && (numero2 != numero3)){
+        if(numero1 > numero2 && numero1 > numero3){
+            alert("O maior número é " + numero1)
+        }else if(numero2 > numero1 && numero2 > numero3){
+            alert("O maior número é " + numero2)
+        }else{
+            alert("O maior número é " + numero3)
+        }
+            }else{
+                alert("Números inválidos, tente novamente.")
+            }
+    
+</script>
+</html>

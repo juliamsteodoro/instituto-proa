@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+       // 3.5 Leia 2 notas de um aluno, calcule a média final e considere aprovação com nota 9,5. Em seguida, pergunte: Calcular a média de outro aluno? (S/N). Se a resposta for S, repita; caso contrário, encerre e mostre a quantidade de alunos aprovados.
+    var aprovados = 0;
+    var continuar = "S";
+    while(continuar == "S" || continuar == "s"){
+        var nota1 = Number(prompt("Insira a primeira nota:"));
+        var nota2 = Number(prompt("Insira a segunda nota:"));
+        var media = ((nota1 + nota2) / 2);
+        if (media >= 9.5){
+            alert("Parabéns! Aluno aprovado.");
+            aprovados++;
+        }else{
+            alert("Aluno reprovado.");
+        }
+        continuar = prompt("Deseja calcular a média de outro aluno? (S/N)")
+    }
+            alert("O total de aprovados é: " + aprovados)
+</script>
+</html>

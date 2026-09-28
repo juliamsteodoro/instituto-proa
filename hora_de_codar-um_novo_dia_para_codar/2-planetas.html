@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+let sistema_solar = ["MERCÚRIO", "VÊNUS", "TERRA", "MARTE", "JÚPITER", "SATURNO", "URANO", "NETUNO", "PLUTÃO"];
+
+alert("Os planetas do Sistema Solar são: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano, Netuno, Plutão");
+
+let planeta = prompt("Digite o nome de um planeta:").toUpperCase();
+
+if (sistema_solar.includes(planeta)) {
+    alert("Esse planeta faz parte do Sistema Solar!");
+} else {
+    alert("Esse planeta não faz parte do Sistema Solar.");
+}
+</script>
+</html>
