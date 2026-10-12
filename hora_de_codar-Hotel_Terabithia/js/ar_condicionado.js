@@ -1,40 +1,33 @@
-function ar_condicionado(nomeUsuario){
-    let continuar = "S";
-
-    let menorValor = Infinity;
-    let nomeMenor = "";
-
-    let maiorValor = 0; 
-    let nomeMaior = "";
-
-    while (continuar.toUpperCase() === "S"){
-    let nomeEmpresa = prompt("Qual o nome da empresa?");
-    let valorAparelho = parseFloat(prompt("Qual o valor por aparelho?"));
-    let quantidadeAparelhos = parseInt(prompt("Qual a quantidade de aparelhos?"));
-    let percentualDesconto = parseFloat(prompt("Qual o percentual de desconto?"));
-    let quantidadeMinima = parseInt(prompt("Qual a quantidade mínima para desconto?"))
-    const valorDeslocamento = parseFloat(prompt("Qual o valor de deslocamento?"));
-    let valorDesconto = 0;
-
-    if(quantidadeAparelhos >= quantidadeMinima){
-        valorDesconto = (quantidadeAparelhos * valorAparelho) * (percentualDesconto / 100);
-    }
-    let valorTotal = (quantidadeAparelhos * valorAparelho) - valorDesconto + valorDeslocamento;
-    alert("O serviço da " + nomeEmpresa + "custará R$" + valorTotal)
-    if (valorTotal < menorValor) {
-        menorValor = valorTotal;
-        nomeMenor = nomeEmpresa;
-    }
-    if (valorTotal > maiorValor) {
-        maiorValor = valorTotal;
-        nomeMaior = nomeEmpresa;
-    }
-    continuar = prompt("Deseja informar novos dados? (S/N)");
+﻿function calcularOrcamento(valor, quantidade, percentual, minimo, deslocamento) {
+    const bruto = valor * quantidade;
+    const desconto = quantidade >= minimo ? bruto * percentual / 100 : 0;
+    return bruto - desconto + deslocamento;
 }
-    alert("A empresa com o maior orçamento foi " + nomeMaior + ", no valor de R$" + maiorValor);
-    alert("A empresa com o menor orçamento foi " + nomeMenor + ", no valor de R$" + menorValor);
-    alert("A diferença de percentual entre elas é de "+ (((maiorValor - menorValor)/menorValor ) * (100).toFixed(2) + "%"))
-    inicio(nomeUsuario);
+function exibirOrcamento(orcamento) {
+    alert(`O serviço de ${orcamento.empresa} custará ${moeda(orcamento.total)}`);
 }
-    
-
+function ar_condicionado(nomeUsuario) {
+    const orcamentos = [];
+    while (true) {
+        const empresa = lerTexto('Nome da empresa:');
+        if (empresa === null) return;
+        const valor = lerNumero('Valor por aparelho:');
+        const quantidade = lerNumero('Quantidade de aparelhos:');
+        const percentual = lerNumero('Percentual de desconto (0-100):');
+        const minimo = lerNumero('Quantidade mínima para desconto:');
+        const deslocamento = lerNumero('Valor fixo de deslocamento:');
+        if (!numeroValido(valor, 0) || !numeroValido(quantidade, 1, Infinity, true) || !numeroValido(percentual, 0, 100) || !numeroValido(minimo, 0, Infinity, true) || !numeroValido(deslocamento, 0)) {
+            erro('Valor inválido.');
+            continue;
+        }
+        const orcamento = { empresa, total: calcularOrcamento(valor, quantidade, percentual, minimo, deslocamento) };
+        orcamentos.push(orcamento);
+        exibirOrcamento(orcamento);
+        if (lerOpcao(`Deseja informar novos dados, ${nomeUsuario}? (S/N):`, ['S', 'N']) !== 'S') break;
+    }
+    orcamentos.sort((a, b) => a.total - b.total);
+    const menor = orcamentos[0];
+    const maior = orcamentos[orcamentos.length - 1];
+    const diferenca = menor.total === 0 ? (maior.total === 0 ? '0,00%' : 'Não calculável (menor orçamento igual a zero)') : ((maior.total - menor.total) / menor.total * 100).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%';
+    alert(`O orçamento de menor valor é o de ${menor.empresa} por ${moeda(menor.total)}\nMaior orçamento: ${maior.empresa} por ${moeda(maior.total)}\nDiferença percentual: ${diferenca}`);
+}

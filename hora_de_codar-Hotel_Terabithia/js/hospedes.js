@@ -1,114 +1,53 @@
-let lista_hospedes = [];
-
-function menu_hospedes(nomeUsuario) {
-    let escolha = parseInt(prompt("Escolha uma opção:\n 1.) Cadastrar hóspede\n 2.) Pesquisar hóspede por nome\n 3.) Pesquisar hóspede por prefixo\n 4.) Listar ordenado (A-Z)\n 5.) Atualizar cadastro\n 6.) Remover cadastro\n 7.) Voltar"));
-    
-    switch (escolha) { 
-        case 1:
-            cadastrar_hospede(nomeUsuario);
-            break;
-        case 2:
-            pesquisar_nome(nomeUsuario);
-            break;
-        case 3:
-            pesquisar_prefixo(nomeUsuario);
-            break;
-        case 4:
-            listar_hospedes(nomeUsuario);
-            break;
-        case 5:
-            atualizar_cadastro(nomeUsuario);
-            break;
-        case 6:
-            remover_cadastro(nomeUsuario);
-            break;
-        case 7:
-            inicio(nomeUsuario);
-            break;
-        default:
-            alert("Opção inválida, " + nomeUsuario + ".");
-            menu_hospedes(nomeUsuario);
-            break;
-    }
+﻿function hospedesOrdenados(estado) {
+    return [...estado.hospedes].sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
 }
-
-function cadastrar_hospede(nomeUsuario){
-    let nomeHospede;
-    if (lista_hospedes.length >= 15){
-        alert("Máximo de cadastros atingido");
-    } else{
-        nomeHospede = prompt("Nome do hóspede:");
-        if (lista_hospedes.includes(nomeHospede)){
-            alert("Hóspede já cadastrado");
-        } else {
-            lista_hospedes.push(nomeHospede);
-            alert("Hóspede cadastrado com sucesso.")
+function exibirHospedes(hospedes) {
+    if (!hospedes.length) { alert('Hóspede não encontrado'); return; }
+    alert(hospedes.map((hospede, indice) => `[${indice + 1}] ${hospede.nome} — ${hospede.cadastradoEm.toLocaleString('pt-BR')}`).join('\n'));
+}
+function cadastrar_hospede(estado) {
+    if (estado.hospedes.length >= 15) { alert('Máximo de cadastros atingido'); return; }
+    const nome = lerTexto('Nome do hóspede:');
+    if (nome === null) return;
+    if (estado.hospedes.some(hospede => hospede.nome === nome)) { alert('Hóspede já cadastrado'); return; }
+    estado.hospedes.push({ nome, cadastradoEm: new Date() });
+    alert('Operação realizada com sucesso');
+}
+function pesquisar_hospedes(estado, porPrefixo) {
+    const texto = lerTexto(porPrefixo ? 'Prefixo:' : 'Nome exato:');
+    if (texto === null) return;
+    const encontrados = hospedesOrdenados(estado).filter(hospede => porPrefixo ? hospede.nome.startsWith(texto) : hospede.nome === texto);
+    if (!porPrefixo && encontrados.length) alert(`Hóspede ${texto} foi encontrado`);
+    else exibirHospedes(encontrados);
+}
+function alterar_hospede(estado, remover) {
+    const ordenados = hospedesOrdenados(estado);
+    exibirHospedes(ordenados);
+    if (!ordenados.length) return;
+    const indice = lerNumero('Informe o índice da listagem:');
+    if (!numeroValido(indice, 1, ordenados.length, true)) { erro('Índice inválido.'); return; }
+    const hospede = ordenados[indice - 1];
+    if (remover) { estado.hospedes.splice(estado.hospedes.indexOf(hospede), 1); }
+    else {
+        const nome = lerTexto('Informe o novo nome:');
+        if (nome === null) return;
+        if (estado.hospedes.some(outro => outro !== hospede && outro.nome === nome)) { alert('Hóspede já cadastrado'); return; }
+        hospede.nome = nome;
+    }
+    alert('Operação realizada com sucesso');
+}
+function menu_hospedes(estado) {
+    while (true) {
+        const opcao = lerNumero('[Cadastro de Hóspedes]\n1. Cadastrar\n2. Pesquisar por nome exato\n3. Pesquisar por prefixo\n4. Listar ordenado (A-Z)\n5. Atualizar cadastro\n6. Remover cadastro\n7. Voltar');
+        switch (opcao) {
+            case 1: cadastrar_hospede(estado); break;
+            case 2: pesquisar_hospedes(estado, false); break;
+            case 3: pesquisar_hospedes(estado, true); break;
+            case 4: exibirHospedes(hospedesOrdenados(estado)); break;
+            case 5: alterar_hospede(estado, false); break;
+            case 6: alterar_hospede(estado, true); break;
+            case 7: return;
+            default: erro();
         }
     }
-    menu_hospedes(nomeUsuario);
-}
-
-function pesquisar_nome(nomeUsuario){
-    let nome = prompt("Insira o nome:")
-    if(lista_hospedes.includes(nome)){
-        alert("Hospede " + nome + " foi encontrado")
-    }else {
-        alert("Hóspede não encontrado.")
-    }
-    menu_hospedes(nomeUsuario);
-}
-
-function pesquisar_prefixo(nomeUsuario){
-    let prefixo = prompt("Digite o prefixo para pesquisa:");
-
-    let resultadosEncontrados = "Resultados\n";
-
-    for(let i = 0; i < lista_hospedes.length; i++){
-        let nomeAtual = lista_hospedes[i];
-
-        if(nomeAtual.startsWith(prefixo)){
-            resultadosEncontrados += "[" + i + "] " + nomeAtual + "\n";
-        }
-    }
-    alert(resultadosEncontrados);
-    menu_hospedes(nomeUsuario);
-}
-
-function lista_hospedes(nomeUsuario){
-    lista_hospedes.sort();
-    let listaTexto = "Hóspedes cadastrados\n";
-    for (let i = 0; i < lista_hospedes.length; i++){
-        let nomeAtual = lista_hospedes[i];
-        listaTexto += "[" + i + "] " + nomeAtual + "\n"
-
-    }
-    alert(listaTexto);
-    menu_hospedes(nomeUsuario);
-}
-
-function atualizar_cadastro(nomeUsuario){
-    let nomeAntigo = prompt("Qual o nome do hóspede que deseja atualizar?");
-    let indice = lista_hospedes.indexOf(nomeAntigo);
-
-    if (indice !== -1){
-        let nomeNovo = prompt("Informe o novo nome:")
-        lista_hospedes[indice] = nomeNovo;
-        alert("Cadastrado atualizado com sucesso.")
-    } else {
-        alert("Hóspede não encontrado.")
-    }
-    menu_hospedes(nomeUsuario);
-}
-
-function remover_cadastro(nomeUsuario){
-    let nomeRemover = prompt("Qual o nome dos hóspede que deseja remover?");
-    let indice = lista_hospedes.indexOf(nomeRemover);
-
-    if(indice !== -1){
-        lista_hospedes.splice(indice, 1);
-        alert("Hóspede removido com sucesso.");
-    } else{
-        alert("Hóspede não encontado.")
-    }
-    menu_hospedes(nomeUsuario);
 }
