@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "user": "cida.ensina",
+    "nome": "Dona Cida Ferreira",
+    "location": "Caruaru, Pernambuco",
+    "avatar": "/images/avatars/cida.svg",
+    "image": "/images/posts/biblioteca.svg",
+    "alt": "Ilustração de uma biblioteca escolar cheia de crianças sentadas no tapete lendo livros",
+    "likes": 4821,
+    "tempo": "2 h",
+    "bio": "Professora alfabetizadora há 50 anos. Já ensinei a ler os filhos dos meus alunos e, agora, os netos.",
+    "desejo": "A biblioteca da escola com fila na porta e nenhum livro parado na estante.",
+    "caption": "50 anos ensinando o bê-á-bá. Sabe o que eu mais quero ver? Criança brigando pra ver quem pega o livro primeiro. 📚💛",
+    "seguidores": 12400,
+    "comments": [
+      { "id": 1, "user": "tiago.enfermeiro", "text": "A senhora me ensinou a ler em 1998. Até hoje leio bula em voz alta por sua causa 😂" },
+      { "id": 2, "user": "bia.codigo", "text": "Primeiro a gente lê livro, depois lê código! 🙌" },
+      { "id": 3, "user": "lia.olhaproceu", "text": "Separei 3 livros de astronomia pra doar, Dona Cida!" }
+    ]
+  },
+  {
+    "id": 2,
+    "user": "rafa.brigadista",
+    "nome": "Rafael Kimura",
+    "location": "Pantanal, Mato Grosso do Sul",
+    "avatar": "/images/avatars/rafa.svg",
+    "image": "/images/posts/pantanal.svg",
+    "alt": "Ilustração do Pantanal verde ao amanhecer, com ipês amarelos floridos, araras voando e água refletindo o sol",
+    "likes": 9310,
+    "tempo": "5 h",
+    "bio": "Brigadista voluntário. Passo a seca inteira apagando fogo e o resto do ano plantando.",
+    "desejo": "Uma temporada inteira de seca sem nenhum foco de incêndio no Pantanal.",
+    "caption": "Depois de 6 anos de brigada, o que eu mais quero ver é isso aqui: tudo verde, ipê florido, arara fazendo barulho e meu rádio em silêncio. 🌳🔥🚫",
+    "seguidores": 31800,
+    "comments": [
+      { "id": 1, "user": "seu.joaquim.pesca", "text": "Quando o Pantanal respira, o rio agradece, meu filho." },
+      { "id": 2, "user": "maya.nofundo", "text": "Mata em terra, coral no mar. A gente chega lá! 🌿🪸" }
+    ]
+  },
+  {
+    "id": 3,
+    "user": "lia.olhaproceu",
+    "nome": "Lia Monteiro",
+    "location": "Quixadá, Ceará",
+    "avatar": "/images/avatars/lia.svg",
+    "image": "/images/posts/via-lactea.svg",
+    "alt": "Ilustração de um céu noturno com a Via Láctea inteira visível sobre serras e mandacarus, com uma pessoa e um telescópio",
+    "likes": 15204,
+    "tempo": "8 h",
+    "bio": "Astrônoma amadora. Levo telescópio para escolas do sertão e caço meteoro nas madrugadas.",
+    "desejo": "Toda criança da cidade vendo a Via Láctea sem precisar sair de casa.",
+    "caption": "Quero ver o dia em que as cidades apaguem as luzes desnecessárias e toda criança possa ver ISSO do quintal. O céu também é patrimônio. 🌌✨",
+    "seguidores": 48200,
+    "comments": [
+      { "id": 1, "user": "cida.ensina", "text": "Que coisa mais linda, menina. Vou levar meus alunos na próxima observação!" },
+      { "id": 2, "user": "rafa.brigadista", "text": "No meio do mato o céu fica assim. Vale cada noite sem dormir." },
+      { "id": 3, "user": "bia.codigo", "text": "Bora fazer um app pra mapear poluição luminosa? 👀" }
+    ]
+  },
+  {
+    "id": 4,
+    "user": "seu.joaquim.pesca",
+    "nome": "Seu Joaquim Bento",
+    "location": "Rio São Francisco, Bahia",
+    "avatar": "/images/avatars/joaquim.svg",
+    "image": "/images/posts/rio.svg",
+    "alt": "Ilustração de um rio limpo e transparente com muitos peixes coloridos e uma canoa de pescador na superfície",
+    "likes": 7698,
+    "tempo": "12 h",
+    "bio": "Pescador há 60 anos. Conheço o Velho Chico pelo cheiro da água.",
+    "desejo": "O Velho Chico limpo de novo, com água clara e peixe pra todo mundo.",
+    "caption": "Meu avô dizia que dava pra ver o peixe do barco. Quero ver isso de novo antes de pendurar a rede. Água limpa é comida na mesa. 🎣🐟",
+    "seguidores": 9600,
+    "comments": [
+      { "id": 1, "user": "maya.nofundo", "text": "Seu Joaquim, o senhor topa dar uma aula pra minha turma de biologia?" },
+      { "id": 2, "user": "lia.olhaproceu", "text": "Que poesia. Rio limpo também reflete estrela ✨" }
+    ]
+  },
+  {
+    "id": 5,
+    "user": "maya.nofundo",
+    "nome": "Maya Santos",
+    "location": "Recife de Fora, Porto Seguro",
+    "avatar": "/images/avatars/maya.svg",
+    "image": "/images/posts/coral.svg",
+    "alt": "Ilustração de um recife de coral colorido e saudável, com peixes, raios de sol e bolhas no fundo do mar",
+    "likes": 11057,
+    "tempo": "1 d",
+    "bio": "Bióloga marinha. Planto corais em berçários submarinos — já são 3.200 mudas.",
+    "desejo": "O recife colorido de novo, com cardume passando no meio dos corais que a gente plantou.",
+    "caption": "Muda nº 3.200 plantada hoje! O que eu mais quero ver é esse recife inteiro colorido de novo, sem nenhum coral branco. 🪸🐠💙",
+    "seguidores": 27300,
+    "comments": [
+      { "id": 1, "user": "rafa.brigadista", "text": "Você planta coral, eu planto ipê. Time do replantio! 🌱" },
+      { "id": 2, "user": "tiago.enfermeiro", "text": "Isso aqui é terapia. Salvei pra olhar depois do plantão." }
+    ]
+  },
+  {
+    "id": 6,
+    "user": "tiago.enfermeiro",
+    "nome": "Tiago Nunes",
+    "location": "Hospital da Criança, Salvador",
+    "avatar": "/images/avatars/tiago.svg",
+    "image": "/images/posts/pracinha.svg",
+    "alt": "Ilustração de uma pracinha ensolarada com crianças brincando no balanço e no escorregador, balões coloridos e uma faixa escrito todo mundo de alta",
+    "likes": 21480,
+    "tempo": "1 d",
+    "bio": "Enfermeiro de UTI pediátrica. Especialista em curativo, bexiga de luva e piada ruim.",
+    "desejo": "A UTI vazia porque todas as crianças tiveram alta e foram brincar na pracinha.",
+    "caption": "Plantão de 12 horas e eu só penso numa coisa: o dia em que a UTI ficar vazia porque TODO MUNDO foi pra casa. Meu lugar favorito? A pracinha em frente ao hospital. 🎈💛",
+    "seguidores": 56100,
+    "comments": [
+      { "id": 1, "user": "cida.ensina", "text": "Deus abençoe suas mãos, meu filho." },
+      { "id": 2, "user": "maya.nofundo", "text": "Chorei. Obrigada por existir, Tiago 💛" },
+      { "id": 3, "user": "seu.joaquim.pesca", "text": "Criança tem que estar é no balanço!" }
+    ]
+  },
+  {
+    "id": 7,
+    "user": "bia.codigo",
+    "nome": "Bia Okafor",
+    "location": "Capão Redondo, São Paulo",
+    "avatar": "/images/avatars/bia.svg",
+    "image": "/images/posts/formatura.svg",
+    "alt": "Ilustração de uma formatura com capelos voando, confetes e um telão escrito Turma 01 Meninas que Codam",
+    "likes": 13372,
+    "tempo": "2 d",
+    "bio": "Desenvolvedora e professora. Criei o Meninas que Codam para ensinar programação na quebrada.",
+    "desejo": "A primeira turma do Meninas que Codam formada e todas contratadas.",
+    "caption": "Começou com 4 notebooks emprestados num salão de igreja. Hoje são 40 meninas. O que eu mais quero ver? Capelo voando e 40 crachás novos. 🎓👩🏾‍💻",
+    "seguidores": 39500,
+    "comments": [
+      { "id": 1, "user": "lia.olhaproceu", "text": "Já reservei a primeira fila da formatura! 🎉" },
+      { "id": 2, "user": "cida.ensina", "text": "Ensinar é a coisa mais bonita do mundo. Orgulho de você, Bia." }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+:root {
+  --fundo: #f7f5fc;
+  --cartao: #ffffff;
+  --texto: #1f1a2e;
+  --texto-suave: #6e6780;
+  --borda: #e7e1f1;
+  --primaria: #7c3aed;
+  --curtida: #f0386b;
+  --gradiente: linear-gradient(45deg, #7c3aed, #ec4899 55%, #f97362);
+  --fonte: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --fonte-logo: 'Grand Hotel', 'Brush Script MT', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--fonte);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 3px solid #c4b5fd;
+  outline-offset: 2px;
+}
