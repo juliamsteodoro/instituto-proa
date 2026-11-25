@@ -1,0 +1,9 @@
+Bem-vindo ao Hotel Terabithia
+
+Informe seu nome: Bruno
+Informe a senha: ****
+Senha incorreta. Tentativas restantes: 2.
+Informe a senha: ****
+Senha incorreta. Tentativas restantes: 1.
+Informe a senha: ****
+Número máximo de tentativas excedido. Acesso bloqueado. O sistema será encerrado.

@@ -1,0 +1,517 @@
+Bem-vindo ao Hotel Terabithia
+
+Informe seu nome: Ana Recepção
+Informe a senha: ****
+Senha incorreta. Tentativas restantes: 2.
+Informe a senha: ****
+
+Bem-vindo ao Hotel Terabithia, Ana Recepção. É um imenso prazer ter você por aqui!
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 9
+Opção inválida, Ana Recepção. Por favor, informe um número entre 1 e 7.
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: abc
+Opção inválida, Ana Recepção. Por favor, informe um número entre 1 e 7.
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 1
+
+[Reservas]
+Informe o valor da diária: 200
+Informe a quantidade de diárias (1-30): 3
+Informe o nome do hóspede: Carla Souza
+Tipo de quarto (S/E/L): X
+Tipo inválido. Informe S (Standard), E (Executivo) ou L (Luxo).
+Tipo de quarto (S/E/L): E
+Escolha um quarto (1-20): 7
+
+Resumo:
+Hóspede: Carla Souza
+Quarto: 7 (Executivo)
+Diárias: 3 x R$ 200,00
+Subtotal: R$ 810,00
+Taxa de serviço (10%): R$ 81,00
+Total: R$ 891,00
+
+Ana Recepção, confirma a reserva? (S/N): S
+Reserva efetuada com sucesso.
+
+Mapa de quartos (L = livre, O = ocupado):
+01[L]  02[L]  03[L]  04[L]  05[L]
+06[L]  07[O]  08[L]  09[L]  10[L]
+11[L]  12[L]  13[L]  14[L]  15[L]
+16[L]  17[L]  18[L]  19[L]  20[L]
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 1
+
+[Reservas]
+Informe o valor da diária: 150
+Informe a quantidade de diárias (1-30): 2
+Informe o nome do hóspede: João Lima
+Tipo de quarto (S/E/L): S
+Escolha um quarto (1-20): 7
+Quarto já está ocupado.
+Quartos livres: 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+Escolha um quarto (1-20): 25
+Quarto inválido. Informe um número de 1 a 20.
+Escolha um quarto (1-20): 3
+
+Resumo:
+Hóspede: João Lima
+Quarto: 3 (Standard)
+Diárias: 2 x R$ 150,00
+Subtotal: R$ 300,00
+Taxa de serviço (10%): R$ 30,00
+Total: R$ 330,00
+
+Ana Recepção, confirma a reserva? (S/N): N
+Reserva não efetuada.
+
+Mapa de quartos (L = livre, O = ocupado):
+01[L]  02[L]  03[L]  04[L]  05[L]
+06[L]  07[O]  08[L]  09[L]  10[L]
+11[L]  12[L]  13[L]  14[L]  15[L]
+16[L]  17[L]  18[L]  19[L]  20[L]
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 1
+
+[Reservas]
+Informe o valor da diária: -50
+Valor inválido, Ana Recepção
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 1
+
+[Reservas]
+Informe o valor da diária: 200
+Informe a quantidade de diárias (1-30): 31
+Valor inválido, Ana Recepção
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 2
+
+[Cadastro de Hóspedes]
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 1
+Nome do hóspede: Rosani Albuquerque
+Hóspede cadastrado com sucesso.
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 1
+Nome do hóspede: Roberto Gómez
+Hóspede cadastrado com sucesso.
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 1
+Nome do hóspede: Rosani Albuquerque
+Hóspede já cadastrado
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 2
+Nome exato: Roberto Gómez
+Hóspede Roberto Gómez foi encontrado
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 2
+Nome exato: Maria
+Hóspede não encontrado
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 3
+Prefixo: Ro
+Resultados:
+[1] Roberto Gómez
+[2] Rosani Albuquerque
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 4
+Hóspedes cadastrados (2/15):
+[1] Roberto Gómez — cadastrado em 25/11/2026 09:13:51
+[2] Rosani Albuquerque — cadastrado em 25/11/2026 09:13:51
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 5
+Hóspedes cadastrados (2/15):
+[1] Roberto Gómez — cadastrado em 25/11/2026 09:13:51
+[2] Rosani Albuquerque — cadastrado em 25/11/2026 09:13:51
+Índice: 2
+Novo nome: Roberta Gómez
+Operação realizada com sucesso
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 6
+Hóspedes cadastrados (2/15):
+[1] Roberta Gómez — cadastrado em 25/11/2026 09:13:51
+[2] Roberto Gómez — cadastrado em 25/11/2026 09:13:51
+Índice: 1
+Confirma a remoção de Roberta Gómez? (S/N): S
+Operação realizada com sucesso
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 8
+Opção inválida, Ana Recepção. Por favor, informe um número entre 1 e 7.
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 4
+Hóspedes cadastrados (1/15):
+[1] Roberto Gómez — cadastrado em 25/11/2026 09:13:51
+
+1-Cadastrar 2-Pesquisar exato 3-Pesquisar prefixo 4-Listar 5-Atualizar 6-Remover 7-Voltar
+Opção: 7
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 3
+
+[Eventos]
+Convidados: 192
+Auditório selecionado: Laranja (42 cadeiras adicionais)
+
+Dia: segunda
+Hora inicial: 13
+Duração (1-12 horas): 8
+Empresa: Lojas Transilvânia
+Status: Auditório reservado.
+Auditório reservado para Lojas Transilvânia: segunda às 13hs
+
+Garçons necessários: 20 (16 pelos convidados + 4 pela duração)
+Custo com garçons: R$ 1.680,00
+
+Buffet:
+Café: 38,4 L (R$ 30,72)
+Água: 96,0 L (R$ 38,40)
+Salgados: 1344 un (R$ 456,96)
+Custo buffet: R$ 526,08
+
+===== RELATÓRIO TÉCNICO DO EVENTO =====
+Auditório: Laranja (42 cadeiras adicionais)
+Empresa: Lojas Transilvânia
+Data: Segunda-feira
+Horário: 13h às 21h
+Convidados: 192
+Garçons: 20
+Duração: 8h
+Custo garçons: R$ 1.680,00
+Custo buffet: R$ 526,08
+Total do evento: R$ 2.206,08
+Ana Recepção, confirmar reserva? (S/N): S
+Reserva efetuada com sucesso.
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 3
+
+[Eventos]
+Convidados: 400
+Número de convidados inválido: capacidade máxima de 350 excedida
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 3
+
+[Eventos]
+Convidados: 100
+Auditório selecionado: Laranja
+
+Dia: domingo
+Hora inicial: 13
+Duração (1-12 horas): 4
+Status: Auditório indisponível — o evento terminaria às 17h, após o fechamento (15h).
+Reserva não efetuada.
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 3
+
+[Eventos]
+Convidados: 50
+Auditório selecionado: Laranja
+
+Dia: sabado
+Hora inicial: 8
+Duração (1-12 horas): 6
+Empresa: Eventos XP
+Status: Auditório reservado.
+Auditório reservado para Eventos XP: sabado às 8hs
+
+Garçons necessários: 8 (5 pelos convidados + 3 pela duração)
+Custo com garçons: R$ 504,00
+
+Buffet:
+Café: 10,0 L (R$ 8,00)
+Água: 25,0 L (R$ 10,00)
+Salgados: 350 un (R$ 119,00)
+Custo buffet: R$ 137,00
+
+===== RELATÓRIO TÉCNICO DO EVENTO =====
+Auditório: Laranja
+Empresa: Eventos XP
+Data: Sábado
+Horário: 8h às 14h
+Convidados: 50
+Garçons: 8
+Duração: 6h
+Custo garçons: R$ 504,00
+Custo buffet: R$ 137,00
+Total do evento: R$ 641,00
+Ana Recepção, confirmar reserva? (S/N): N
+Reserva não efetuada.
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 3
+
+[Eventos]
+Convidados: 30
+Auditório selecionado: Laranja
+
+Dia: segunda
+Hora inicial: 20
+Duração (1-12 horas): 2
+Status: Auditório indisponível — já existe evento de Lojas Transilvânia das 13h às 21h.
+Reserva não efetuada.
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 4
+
+[Ar-Condicionado]
+
+Empresa: Clima Forte
+Valor por aparelho: 120
+Quantidade: 10
+Desconto (%): 8
+Mínimo para desconto: 8
+Deslocamento: 150
+Valor bruto: R$ 1.200,00
+Desconto (8%): -R$ 96,00
+Deslocamento: R$ 150,00
+Total: R$ 1.254,00
+O serviço de Clima Forte custará R$ 1.254,00
+
+Deseja informar novos dados, Ana Recepção? (S/N): S
+
+Empresa: Gelo Total
+Valor por aparelho: -5
+Valor inválido. Informe um número maior que zero.
+Valor por aparelho: 100
+Quantidade: 12
+Desconto (%): 10
+Mínimo para desconto: 15
+Deslocamento: 0
+Valor bruto: R$ 1.200,00
+Desconto: não aplicado (mínimo de 15 aparelhos)
+Deslocamento: R$ 0,00
+Total: R$ 1.200,00
+O serviço de Gelo Total custará R$ 1.200,00
+
+Deseja informar novos dados, Ana Recepção? (S/N): S
+
+Empresa: Frio Bom
+Valor por aparelho: 130
+Quantidade: 5
+Desconto (%): 10
+Mínimo para desconto: 8
+Deslocamento: 80
+Valor bruto: R$ 650,00
+Desconto: não aplicado (mínimo de 8 aparelhos)
+Deslocamento: R$ 80,00
+Total: R$ 730,00
+O serviço de Frio Bom custará R$ 730,00
+
+Deseja informar novos dados, Ana Recepção? (S/N): N
+
+Melhor orçamento: Frio Bom — R$ 730,00
+Pior orçamento: Clima Forte — R$ 1.254,00
+Diferença percentual entre melhor e pior proposta: 71,78%
+O orçamento de menor valor é o de Frio Bom por R$ 730,00
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 5
+
+[Abastecimento]
+Wayne Oil — preço do álcool (R$/L): 4,20
+Wayne Oil — preço da gasolina (R$/L): 5,82
+Stark Petrol — preço do álcool (R$/L): 4,35
+Stark Petrol — preço da gasolina (R$/L): 6,17
+
+Wayne Oil -> Álcool: 4,20 | Gasolina: 5,82
+Stark Petrol -> Álcool: 4,35 | Gasolina: 6,17
+
+Wayne Oil: melhor opção = Gasolina | Total (42L) = R$ 244,44   [álcool R$ 176,40 / gasolina R$ 244,44]
+Stark Petrol: melhor opção = Gasolina | Total (42L) = R$ 259,14   [álcool R$ 182,70 / gasolina R$ 259,14]
+
+Ranking (menor para maior custo):
+1º Wayne Oil — Gasolina — R$ 244,44
+2º Stark Petrol — Gasolina — R$ 259,14
+
+Ana Recepção, é mais barato abastecer com gasolina no posto Wayne Oil.
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 5
+
+[Abastecimento]
+Wayne Oil — preço do álcool (R$/L): 3,90
+Wayne Oil — preço da gasolina (R$/L): 5,82
+Stark Petrol — preço do álcool (R$/L): abc
+Preço inválido. Informe um valor maior que zero.
+Stark Petrol — preço do álcool (R$/L): 4,35
+Stark Petrol — preço da gasolina (R$/L): 6,17
+
+Wayne Oil -> Álcool: 3,90 | Gasolina: 5,82
+Stark Petrol -> Álcool: 4,35 | Gasolina: 6,17
+
+Wayne Oil: melhor opção = Álcool | Total (42L) = R$ 163,80   [álcool R$ 163,80 / gasolina R$ 244,44]
+Stark Petrol: melhor opção = Gasolina | Total (42L) = R$ 259,14   [álcool R$ 182,70 / gasolina R$ 259,14]
+
+Ranking (menor para maior custo):
+1º Wayne Oil — Álcool — R$ 163,80
+2º Stark Petrol — Gasolina — R$ 259,14
+
+Ana Recepção, é mais barato abastecer com álcool no posto Wayne Oil.
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 6
+
+[Relatórios Operacionais]
+Indicador                       |       Valor
+--------------------------------+------------
+Reservas de quartos confirmadas |           1
+Taxa de ocupação atual          | 5,0% (1/20)
+Hóspedes cadastrados            |           1
+Eventos confirmados             |           1
+Receita — hospedagem            |   R$ 891,00
+Receita — eventos               | R$ 2.206,08
+Receita — total geral           | R$ 3.097,08
+
+Reservas de quartos:
+Quarto | Hóspede     | Tipo      | Diárias |     Total
+-------+-------------+-----------+---------+----------
+     7 | Carla Souza | Executivo |       3 | R$ 891,00
+
+Eventos:
+Empresa            | Auditório | Dia     | Horário | Convidados |       Total
+-------------------+-----------+---------+---------+------------+------------
+Lojas Transilvânia | Laranja   | segunda | 13h-21h |        192 | R$ 2.206,08
+
+===== HOTEL TERABITHIA — MENU PRINCIPAL =====
+1. Reservas de Quartos
+2. Cadastro de Hóspedes
+3. Eventos
+4. Ar-Condicionado
+5. Abastecimento
+6. Relatórios Operacionais
+7. Sair
+Opção: 7
+Muito obrigado e até logo, Ana Recepção.

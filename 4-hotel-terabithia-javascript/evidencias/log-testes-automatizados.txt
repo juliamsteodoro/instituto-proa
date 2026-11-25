@@ -1,0 +1,86 @@
+
+> hotel-terabithia@1.0.0 test
+> node --test tests/regras.test.js
+
+TAP version 13
+# Subtest: autenticação: senha 2678
+ok 1 - autenticação: senha 2678
+  ---
+  duration_ms: 0.952291
+  type: 'test'
+  ...
+# Subtest: utils: conversões e formatação
+ok 2 - utils: conversões e formatação
+  ---
+  duration_ms: 0.610672
+  type: 'test'
+  ...
+# Subtest: reservas: validações de diária e quantidade
+ok 3 - reservas: validações de diária e quantidade
+  ---
+  duration_ms: 0.137381
+  type: 'test'
+  ...
+# Subtest: reservas: cálculo do exemplo (200 x 3 x Executivo)
+ok 4 - reservas: cálculo do exemplo (200 x 3 x Executivo)
+  ---
+  duration_ms: 0.649646
+  type: 'test'
+  ...
+# Subtest: reservas: ocupação de quartos e mapa 4x5
+ok 5 - reservas: ocupação de quartos e mapa 4x5
+  ---
+  duration_ms: 0.384129
+  type: 'test'
+  ...
+# Subtest: hóspedes: limite, duplicidade, busca, atualização e remoção
+ok 6 - hóspedes: limite, duplicidade, busca, atualização e remoção
+  ---
+  duration_ms: 9.151404
+  type: 'test'
+  ...
+# Subtest: eventos A: seleção de auditório
+ok 7 - eventos A: seleção de auditório
+  ---
+  duration_ms: 0.284804
+  type: 'test'
+  ...
+# Subtest: eventos B: janela de horários e conflitos
+ok 8 - eventos B: janela de horários e conflitos
+  ---
+  duration_ms: 0.377574
+  type: 'test'
+  ...
+# Subtest: eventos C e D: garçons e buffet
+ok 9 - eventos C e D: garçons e buffet
+  ---
+  duration_ms: 0.45148
+  type: 'test'
+  ...
+# Subtest: ar-condicionado: orçamento e comparativo
+ok 10 - ar-condicionado: orçamento e comparativo
+  ---
+  duration_ms: 0.472087
+  type: 'test'
+  ...
+# Subtest: abastecimento: regra dos 70% e ranking
+ok 11 - abastecimento: regra dos 70% e ranking
+  ---
+  duration_ms: 0.237729
+  type: 'test'
+  ...
+# Subtest: relatórios: indicadores consolidados
+ok 12 - relatórios: indicadores consolidados
+  ---
+  duration_ms: 0.239163
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 95.427034

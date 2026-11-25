@@ -1,0 +1,112 @@
+Ana Recepção
+1111
+2678
+9
+abc
+1
+200
+3
+Carla Souza
+X
+E
+7
+S
+1
+150
+2
+João Lima
+S
+7
+25
+3
+N
+1
+-50
+1
+200
+31
+2
+1
+Rosani Albuquerque
+1
+Roberto Gómez
+1
+Rosani Albuquerque
+2
+Roberto Gómez
+2
+Maria
+3
+Ro
+4
+5
+2
+Roberta Gómez
+6
+1
+S
+8
+4
+7
+3
+192
+segunda
+13
+8
+Lojas Transilvânia
+S
+3
+400
+3
+100
+domingo
+13
+4
+3
+50
+sabado
+8
+6
+Eventos XP
+N
+3
+30
+segunda
+20
+2
+4
+Clima Forte
+120
+10
+8
+8
+150
+S
+Gelo Total
+-5
+100
+12
+10
+15
+0
+S
+Frio Bom
+130
+5
+10
+8
+80
+N
+5
+4,20
+5,82
+4,35
+6,17
+5
+3,90
+5,82
+abc
+4,35
+6,17
+6
+7
