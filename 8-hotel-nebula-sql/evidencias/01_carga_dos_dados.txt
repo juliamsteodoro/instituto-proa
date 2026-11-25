@@ -1,0 +1,35 @@
+Execução de 01_criacao_banco.sql e 02_insercao_dados.sql em um banco vazio
+Servidor: 8.0.46-0ubuntu0.24.04.5
+Resultado: nenhum erro. Registros carregados:
+
++-------------------+-----------+
+| tabela            | registros |
++-------------------+-----------+
+| hospedes          |        15 |
+| quartos           |        12 |
+| funcionarios      |        10 |
+| servicos          |        11 |
+| reservas          |        70 |
+| hospedagens       |        55 |
+| consumos_servicos |       114 |
+| pagamentos        |        76 |
+| feedbacks         |        42 |
++-------------------+-----------+
++------------+----------+
+| status     | reservas |
++------------+----------+
+| concluida  |       54 |
+| cancelada  |        6 |
+| confirmada |        6 |
+| no_show    |        3 |
+| pendente   |        1 |
++------------+----------+
++--------------+-----+--------------+------------+---------+
+| hospedagem   | qtd | total_devido | total_pago | saldo   |
++--------------+-----+--------------+------------+---------+
+| encerrada    |  54 |    108805.00 |  108805.00 |    0.00 |
+| em_andamento |   1 |      4195.00 |     750.00 | 3445.00 |
++--------------+-----+--------------+------------+---------+
+
+Conferência: todas as hospedagens encerradas têm saldo 0 (diárias + serviços = pagamentos aprovados).
+A única com saldo é a hospedagem em andamento, que pagou só a primeira diária.

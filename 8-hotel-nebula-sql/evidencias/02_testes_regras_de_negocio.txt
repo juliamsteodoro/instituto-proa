@@ -1,0 +1,100 @@
+Execução de 04_testes_regras_negocio.sql (mysql --force -v)
+Cada ERROR abaixo é o resultado ESPERADO: o banco recusou a operação inválida.
+
+--------------
+INSERT INTO hospedes (nome, email) VALUES ('Sem Documento', 'semdoc@email.com')
+--------------
+
+--------------
+INSERT INTO hospedes (nome, email, cpf) VALUES ('Outro Carlos', 'carlos.andrade@email.com', '999.999.999-99')
+--------------
+
+--------------
+INSERT INTO reservas (codigo, id_hospede, id_quarto, data_checkin, data_checkout, num_hospedes, valor_diaria, status)
+VALUES ('TESTE-01', 2, 9, '2026-11-24', '2026-11-26', 2, 750.00, 'confirmada')
+--------------
+
+--------------
+INSERT INTO reservas (codigo, id_hospede, id_quarto, data_checkin, data_checkout, num_hospedes, valor_diaria, status)
+VALUES ('TESTE-02', 2, 1, '2026-12-10', '2026-12-12', 5, 280.00, 'confirmada')
+--------------
+
+--------------
+INSERT INTO reservas (codigo, id_hospede, id_quarto, data_checkin, data_checkout, num_hospedes, valor_diaria, status)
+VALUES ('TESTE-03', 2, 4, '2026-12-10', '2026-12-12', 1, 260.00, 'confirmada')
+--------------
+
+--------------
+INSERT INTO reservas (codigo, id_hospede, id_quarto, data_checkin, data_checkout, num_hospedes, valor_diaria)
+VALUES ('TESTE-04', 2, 1, '2026-12-12', '2026-12-10', 1, 280.00)
+--------------
+
+--------------
+UPDATE reservas SET status = 'cancelada' WHERE codigo = 'HN-2026-0001'
+--------------
+
+--------------
+INSERT INTO hospedagens (id_reserva, id_funcionario_checkin, checkin_real)
+VALUES ((SELECT id_reserva FROM reservas WHERE status = 'cancelada' LIMIT 1), 1, '2026-11-25 14:00:00')
+--------------
+
+--------------
+INSERT INTO pagamentos (id_hospedagem, valor, metodo, num_parcelas, data_pagamento)
+VALUES (1, 100.00, 'pix', 3, '2026-11-25 10:00:00')
+--------------
+
+--------------
+INSERT INTO feedbacks (id_hospedagem, nota_geral)
+VALUES ((SELECT id_hospedagem FROM hospedagens WHERE status = 'em_andamento' LIMIT 1), 5)
+--------------
+
+--------------
+INSERT INTO feedbacks (id_hospedagem, nota_geral) VALUES (1, 6)
+--------------
+
+--------------
+START TRANSACTION
+--------------
+
+--------------
+SELECT r.codigo, r.status AS status_reserva_antes
+  FROM hospedagens h JOIN reservas r USING (id_reserva)
+ WHERE h.status = 'em_andamento'
+--------------
+
++--------------+----------------------+
+| codigo       | status_reserva_antes |
++--------------+----------------------+
+| HN-2026-0064 | confirmada           |
++--------------+----------------------+
+--------------
+UPDATE hospedagens
+   SET status = 'encerrada', checkout_real = '2026-11-28 11:00:00', id_funcionario_checkout = 2
+ WHERE status = 'em_andamento'
+--------------
+
+--------------
+SELECT r.codigo, r.status AS status_reserva_depois
+  FROM reservas r WHERE r.codigo = 'HN-2026-0064'
+--------------
+
++--------------+-----------------------+
+| codigo       | status_reserva_depois |
++--------------+-----------------------+
+| HN-2026-0064 | concluida             |
++--------------+-----------------------+
+--------------
+ROLLBACK
+--------------
+
+ERROR 3819 (HY000) at line 18: Check constraint 'chk_hospedes_documento' is violated.
+ERROR 1062 (23000) at line 22: Duplicate entry 'carlos.andrade@email.com' for key 'hospedes.uq_hospedes_email'
+ERROR 1644 (45000) at line 26: Quarto já reservado em parte deste período.
+ERROR 1644 (45000) at line 31: Número de hóspedes maior que a capacidade do quarto.
+ERROR 1644 (45000) at line 36: Quarto indisponível para reserva (manutenção ou inativo).
+ERROR 3819 (HY000) at line 41: Check constraint 'chk_reservas_datas' is violated.
+ERROR 3819 (HY000) at line 46: Check constraint 'chk_reservas_cancelamento' is violated.
+ERROR 1644 (45000) at line 50: Check-in permitido apenas para reservas confirmadas.
+ERROR 3819 (HY000) at line 55: Check constraint 'chk_pagamentos_parcelado' is violated.
+ERROR 1644 (45000) at line 60: Só é possível avaliar hospedagens encerradas.
+ERROR 3819 (HY000) at line 65: Check constraint 'chk_feedbacks_geral' is violated.
