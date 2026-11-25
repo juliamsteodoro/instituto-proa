@@ -1,0 +1,260 @@
+Hora de Codar 3 — Um Novo Dia Para Codar (arrays)
+
+===== MENU =====
+1. Estudantes
+2. Planetas
+3. Compras
+4. Agenda de Contatos
+5. Sair
+Escolha um exercício: 9
+Opção inválida. Digite um número de 1 a 5.
+
+===== MENU =====
+1. Estudantes
+2. Planetas
+3. Compras
+4. Agenda de Contatos
+5. Sair
+Escolha um exercício: 1
+
+[1 - Estudantes]
+Digite o nome de cada estudante. Para encerrar, digite PARE.
+Nome do estudante 1: Ana Clara
+Estudante Ana Clara cadastrado.
+Nome do estudante 2: 
+O nome não pode ficar em branco.
+Nome do estudante 2: Bruno Souza
+Estudante Bruno Souza cadastrado.
+Nome do estudante 3: Carla Dias
+Estudante Carla Dias cadastrado.
+Nome do estudante 4: pare
+
+Quantidade de estudantes cadastrados: 3
+Lista de estudantes:
+1. Ana Clara
+2. Bruno Souza
+3. Carla Dias
+
+===== MENU =====
+1. Estudantes
+2. Planetas
+3. Compras
+4. Agenda de Contatos
+5. Sair
+Escolha um exercício: 2
+
+[2 - Planetas]
+Planetas do sistema solar:
+1. Mercúrio
+2. Vênus
+3. Terra
+4. Marte
+5. Júpiter
+6. Saturno
+7. Urano
+8. Netuno
+9. Plutão
+
+Digite o nome de um planeta: jupiter
+O planeta Júpiter está na lista.
+
+===== MENU =====
+1. Estudantes
+2. Planetas
+3. Compras
+4. Agenda de Contatos
+5. Sair
+Escolha um exercício: 2
+
+[2 - Planetas]
+Planetas do sistema solar:
+1. Mercúrio
+2. Vênus
+3. Terra
+4. Marte
+5. Júpiter
+6. Saturno
+7. Urano
+8. Netuno
+9. Plutão
+
+Digite o nome de um planeta: Pokémon
+O planeta Pokémon não está na lista.
+
+===== MENU =====
+1. Estudantes
+2. Planetas
+3. Compras
+4. Agenda de Contatos
+5. Sair
+Escolha um exercício: 3
+
+[3 - Compras]
+Lista de frutas:
+1. Maçã
+2. Banana
+3. Laranja
+4. Uva
+5. Manga
+6. Abacaxi
+Digite o nome de uma fruta para retirá-la da lista. Para encerrar, digite PARE.
+
+Fruta: banana
+Fruta foi retirada da lista
+Lista de frutas:
+1. Maçã
+2. Laranja
+3. Uva
+4. Manga
+5. Abacaxi
+
+Fruta: Morango
+Fruta indisponível no nosso mercado
+
+Fruta: MAÇÃ
+Fruta foi retirada da lista
+Lista de frutas:
+1. Laranja
+2. Uva
+3. Manga
+4. Abacaxi
+
+Fruta: PARE
+Frutas restantes:
+1. Laranja
+2. Uva
+3. Manga
+4. Abacaxi
+
+===== MENU =====
+1. Estudantes
+2. Planetas
+3. Compras
+4. Agenda de Contatos
+5. Sair
+Escolha um exercício: 3
+
+[3 - Compras]
+Lista de frutas:
+1. Maçã
+2. Banana
+3. Laranja
+4. Uva
+5. Manga
+6. Abacaxi
+Digite o nome de uma fruta para retirá-la da lista. Para encerrar, digite PARE.
+
+Fruta: Maçã
+Fruta foi retirada da lista
+Lista de frutas:
+1. Banana
+2. Laranja
+3. Uva
+4. Manga
+5. Abacaxi
+
+Fruta: Banana
+Fruta foi retirada da lista
+Lista de frutas:
+1. Laranja
+2. Uva
+3. Manga
+4. Abacaxi
+
+Fruta: Laranja
+Fruta foi retirada da lista
+Lista de frutas:
+1. Uva
+2. Manga
+3. Abacaxi
+
+Fruta: uva
+Fruta foi retirada da lista
+Lista de frutas:
+1. Manga
+2. Abacaxi
+
+Fruta: Manga
+Fruta foi retirada da lista
+Lista de frutas:
+1. Abacaxi
+
+Fruta: Abacaxi
+Fruta foi retirada da lista
+Lista de compras finalizada
+
+===== MENU =====
+1. Estudantes
+2. Planetas
+3. Compras
+4. Agenda de Contatos
+5. Sair
+Escolha um exercício: 4
+
+[4 - Agenda de Contatos]
+Digite um comando (ADICIONAR, BUSCAR, REMOVER, LISTAR, SAIR): ADICIONAR
+Nome: Ana
+Telefone: 99999-8888
+Contato adicionado!
+
+Digite um comando: BUSCAR
+Nome: Ana
+Telefone: 99999-8888
+
+Digite um comando: REMOVER
+Nome: Ana
+Contato removido!
+
+Digite um comando: LISTAR
+Nenhum contato cadastrado.
+
+Digite um comando: adicionar
+Nome: Bruno
+Telefone: 98888-7777
+Contato adicionado!
+
+Digite um comando: ADICIONAR
+Nome: bruno
+Telefone: 91111-2222
+Contato já cadastrado.
+
+Digite um comando: BUSCAR
+Nome: Zeca
+Contato não encontrado
+
+Digite um comando: REMOVER
+Nome: Zeca
+Contato não encontrado
+
+Digite um comando: APAGAR
+Comando inválido! Use: ADICIONAR, BUSCAR, REMOVER, LISTAR, SAIR.
+
+Digite um comando: listar
+Contatos cadastrados (1):
+1. Bruno — 98888-7777
+
+Digite um comando: SAIR
+Agenda encerrada. Total de contatos: 1
+
+===== MENU =====
+1. Estudantes
+2. Planetas
+3. Compras
+4. Agenda de Contatos
+5. Sair
+Escolha um exercício: 1
+
+[1 - Estudantes]
+Digite o nome de cada estudante. Para encerrar, digite PARE.
+Nome do estudante 1: PARE
+
+Nenhum estudante cadastrado.
+
+===== MENU =====
+1. Estudantes
+2. Planetas
+3. Compras
+4. Agenda de Contatos
+5. Sair
+Escolha um exercício: 5
+Até a próxima!

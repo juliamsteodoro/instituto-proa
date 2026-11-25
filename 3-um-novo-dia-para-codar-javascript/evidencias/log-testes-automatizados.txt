@@ -1,0 +1,44 @@
+
+> um-novo-dia-para-codar@1.0.0 test
+> node --test tests/regras.test.js
+
+TAP version 13
+# Subtest: texto: normalização e palavra de parada
+ok 1 - texto: normalização e palavra de parada
+  ---
+  duration_ms: 1.515664
+  type: 'test'
+  ...
+# Subtest: 1 - Estudantes: cadastro sem limite e resumo
+ok 2 - 1 - Estudantes: cadastro sem limite e resumo
+  ---
+  duration_ms: 1.250567
+  type: 'test'
+  ...
+# Subtest: 2 - Planetas: busca com e sem acento
+ok 3 - 2 - Planetas: busca com e sem acento
+  ---
+  duration_ms: 0.217637
+  type: 'test'
+  ...
+# Subtest: 3 - Compras: remoção, fruta indisponível e lista vazia
+ok 4 - 3 - Compras: remoção, fruta indisponível e lista vazia
+  ---
+  duration_ms: 0.162515
+  type: 'test'
+  ...
+# Subtest: 4 - Agenda: adicionar, buscar, remover e comandos
+ok 5 - 4 - Agenda: adicionar, buscar, remover e comandos
+  ---
+  duration_ms: 1.298532
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 81.709633

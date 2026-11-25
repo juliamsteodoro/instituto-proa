@@ -1,0 +1,18 @@
+{
+  "name": "um-novo-dia-para-codar",
+  "version": "1.0.0",
+  "description": "Hora de Codar 3 — exercícios de arrays em JavaScript (Node.js, terminal)",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "estudantes": "node src/estudantes.js",
+    "planetas": "node src/planetas.js",
+    "compras": "node src/compras.js",
+    "agenda": "node src/agenda.js",
+    "test": "node --test tests/regras.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

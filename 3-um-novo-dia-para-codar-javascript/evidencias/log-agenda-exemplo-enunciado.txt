@@ -1,0 +1,20 @@
+
+[4 - Agenda de Contatos]
+Digite um comando (ADICIONAR, BUSCAR, REMOVER, LISTAR, SAIR): ADICIONAR
+Nome: Ana
+Telefone: 99999-8888
+Contato adicionado!
+
+Digite um comando: BUSCAR
+Nome: Ana
+Telefone: 99999-8888
+
+Digite um comando: REMOVER
+Nome: Ana
+Contato removido!
+
+Digite um comando: LISTAR
+Nenhum contato cadastrado.
+
+Digite um comando: SAIR
+Agenda encerrada. Total de contatos: 0
